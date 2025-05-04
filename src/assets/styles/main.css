@@ -1,0 +1,26 @@
+/* src/assets/styles/main.css */
+:root {
+  --light-background: #FFF8E1;
+  --light-primary: #4169E1;
+  --light-secondary: #FF6F61;
+  --light-terciary: #6C757D;
+
+  --dark-background: #1a1a1a;
+  --dark-primary: #D4AF37;
+  --dark-secondary: #B22222;
+  --dark-terciary: #00796B;
+}
+
+.theme--light {
+  --background: var(--light-background);
+  --primary: var(--light-primary);
+  --secondary: var(--light-secondary);
+  --terciary: var(--light-terciary);
+}
+
+.theme--dark {
+  --background: var(--dark-background);
+  --primary: var(--dark-primary);
+  --secondary: var(--dark-secondary);
+  --terciary: var(--dark-terciary);
+}

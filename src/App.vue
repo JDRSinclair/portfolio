@@ -1,23 +1,30 @@
 <template>
-  <v-app>
+  <v-app :style="{ backgroundColor: 'var(--background)' }" :class="['color-transition', { 'theme--dark': isDarkMode, 'theme--light': !isDarkMode }]">
     <v-main>
-      <HelloWorld/>
+      <NavBar />
+      <!-- Autres composants de votre application -->
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+    NavBar,
   },
-
-  data: () => ({
-    //
-  }),
+  computed: {
+    isDarkMode() {
+      return this.$vuetify.theme.global.current.dark;
+    }
+  }
 }
 </script>
+
+<style>
+.color-transition {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+</style>

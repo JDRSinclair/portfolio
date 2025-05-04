@@ -1,10 +1,12 @@
-// Styles
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
-
-// Vuetify
+// src/plugins/vuetify.js
 import { createVuetify } from 'vuetify'
+import 'vuetify/styles' // Importez les styles globaux
+// import '@/assets/styles/main.css';
+import '@mdi/font/css/materialdesignicons.css'
 
-export default createVuetify(
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+
+export default createVuetify({
+  theme: {
+    defaultTheme: 'dark',
+  },
+})
