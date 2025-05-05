@@ -1,26 +1,39 @@
 /* src/assets/styles/main.css */
 :root {
-  --light-background: #FFF8E1;
-  --light-primary: #4169E1;
-  --light-secondary: #FF6F61;
-  --light-terciary: #6C757D;
+  /* Thème clair – Élégance pastel raffinée avec un vert plus profond */
+  --light-background: #ffefda;       /* Beige chaleureux */
+  --light-primary:    #5A8F69;       /* Vert plus profond et apaisant */
+  --light-secondary:  #7EA98E;       /* Vert adouci pour l'équilibre */
+  --light-terciary:   #D9B382;       /* Beige doré pour une touche raffinée */
+  --light-effect:     #D9B382;       /* Effet lumineux en douceur */
+  --light-effect-shadow: rgba(90, 143, 105, 0.3); /* Ombre subtile du vert */
 
-  --dark-background: #1a1a1a;
-  --dark-primary: #D4AF37;
-  --dark-secondary: #B22222;
-  --dark-terciary: #00796B;
+  /* Thème sombre – Fleurs de cerisiers avec un rose plus pastel */
+  --dark-background:    #110e11;       /* Fond profond, teinté d'aubergine */
+  --dark-primary:       #F8B6C1;       /* Rose pastel délicat */
+  --dark-secondary:     #FFD3DA;       /* Rose pâle pour un éclat subtil */
+  --dark-terciary:      #F7E7CE;       /* Crème délicat, rappelant la douceur des pétales */
+  --dark-effect:        #3A2235;       /* Subtil effet de profondeur en harmonie avec le fond */
+  --dark-effect-shadow: rgba(248, 182, 193, 0.3); /* Ombre douce reprenant le rose */
+
 }
+
+
 
 .theme--light {
   --background: var(--light-background);
-  --primary: var(--light-primary);
-  --secondary: var(--light-secondary);
-  --terciary: var(--light-terciary);
+  --primary:    var(--light-primary);
+  --secondary:  var(--light-secondary);
+  --terciary:   var(--light-terciary);
+  --effect:     var(--light-effect);
+  --effect-shadow: var(--light-effect-shadow);
 }
 
 .theme--dark {
   --background: var(--dark-background);
-  --primary: var(--dark-primary);
-  --secondary: var(--dark-secondary);
-  --terciary: var(--dark-terciary);
+  --primary:    var(--dark-primary);
+  --secondary:  var(--dark-secondary);
+  --terciary:   var(--dark-terciary);
+  --effect:     var(--dark-effect);
+  --effect-shadow: var(--dark-effect-shadow);
 }
