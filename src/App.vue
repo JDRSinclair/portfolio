@@ -40,7 +40,7 @@ export default {
 
   data() {
     return {
-      loadedView: PortfolioView,
+      loadedView: ExperiencesView,
       title: "Your Title",
       subtitle: "Your Subtitle",
       // showTextBanner: true,
