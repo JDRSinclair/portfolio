@@ -1,6 +1,6 @@
 <template>
   <!-- Ajoute la classe dynamique pour le thème -->
-  <div :class="['portfolio-view', 'color-transition', theme]">
+  <div class="color-transition" :style="{ background: 'var(--background)' }">
     <!-- Section 1 : Zone de test pleine largeur -->
     <section class="full-width-test">
       <p>Test plein largeur</p>
@@ -43,9 +43,6 @@
         <p>{{ card.subtitle }}</p>
       </div>
     </section>
-
-    <!-- Un bouton pour basculer entre les thèmes -->
-    <button @click="toggleTheme">Changer de thème</button>
   </div>
 </template>
 
@@ -64,7 +61,6 @@ export default {
       ],
       // Section 3 : Liste des langues avec leur niveau
       languages: [
-        { name: 'Français', level: 6 },
         { name: 'Anglais', level: 5 },
         { name: 'Espagnol', level: 6 }
       ],
@@ -94,21 +90,6 @@ export default {
 </script>
 
 <style scoped>
-/* Conteneur principal appliquant le style global et la transition */
-.portfolio-view {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1rem;
-  background: var(--background);
-  min-height: 100vh;
-}
-
-/* Transition pour le changement de couleurs */
-.color-transition {
-  transition: background-color 1s ease, color 1s ease, border-color 1s ease;
-}
-
 /* Section 1 : Test plein largeur */
 .full-width-test {
   width: 100%;

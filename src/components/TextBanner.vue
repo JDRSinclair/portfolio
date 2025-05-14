@@ -1,5 +1,5 @@
 <template>
-    <v-app class="fill-height color-transition" :style="{ background: 'var(--background)' }">
+    <v-app class="color-transition" :style="{ background: 'var(--background)' }">
       <v-container fluid class="d-flex justify-center align-center fill-height pa-0">
         <div class="animation-wrapper">
           <canvas ref="canvas" class="animation-canvas"></canvas>

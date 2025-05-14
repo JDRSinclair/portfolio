@@ -40,9 +40,9 @@ export default {
 
   data() {
     return {
-      loadedView: ExperiencesView,
-      title: "Your Title",
-      subtitle: "Your Subtitle",
+      loadedView: PortfolioView,
+      title: "RODRIGUEZ SINCLAIR Juan David",
+      subtitle: "Ici, vous pourrez trouver des informations me concernant, notamment mes diplômes, mon expérience et mes compétences. J'ai décidé de diviser ces points en trois parties. Vous pourrez naviguer entre elles grâce au menu de navigation situé dans la partie supérieure de la page.",
       // showTextBanner: true,
     };
   },
@@ -106,5 +106,9 @@ export default {
   padding: 1rem;
   background-color: #f5f5f5;
   min-height: 150vh;
+}
+
+.color-transition {
+  transition: background-color 1s ease, color 1s ease, border-color 1s ease;
 }
 </style>
